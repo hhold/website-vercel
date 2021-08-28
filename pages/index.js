@@ -2,81 +2,71 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col font-sf font-light subpixel-antialiased tracking-tight mx-10">
       <Head>
-        <title>Create Next App</title>
+        <title>Hitesh Nair</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+      <section className="m-16 mt-40">
+        <div className="flex flex-col font-c text-6xl">
+          New here?
+          <a href="#" className="flex flex-row mt-3 hover:bg-green-300 hover:no-underline">
+            Who the hell is Hitesh? →
           </a>
         </div>
-      </main>
+      </section>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
+      <section className="m-16">
+        <div className="grid grid-cols-3 w-full">
+          <div className="flex flex-col">
+            <h2 className="text-4xl font-normal mb-5">Stuff</h2>
+            <div className="my-5">
+              <h3 className="font-c text-3xl underline"><a href="#">rendr</a></h3>
+              <p className="text-xl my-2">
+              Serverless drag-and-drop
+              <br/>cloud rendering for Blender
+              </p>
+            </div>
+
+            <div className="my-3">
+              <h3 className="font-c text-3xl underline"><a href="#">playlist hunt</a></h3>
+              <p className="text-xl my-2">
+              Product Hunt, but for playlists.
+              </p>
+            </div>
+
+          </div>
+          
+          <div className="flex flex-col col-span-2 w-full">
+            <h2 className="text-4xl font-normal mb-5">Blog</h2>
+            <div className="my-5">
+              <h3 className="font-c text-3xl underline"><a href="#">
+              How To Get People To Answer Your Surveys
+                </a></h3>
+              <p className="text-xl my-2">
+              There's a simple trick to get people to do anything. Put a carrot on a string and hang it in front of their eyes.
+              </p>
+            </div>
+
+            <div className="my-3">
+              <h3 className="font-c text-3xl underline"><a href="#">
+              The ONE thing Sundar Pichai taught me
+                </a></h3>
+              <p className="text-xl my-2">
+              We don’t know each other in real life and this is clickbait. You should still read this.
+              </p>
+            </div>
+
+          </div>
+        
+
+        </div>
+      </section>
+
+
+
+     
     </div>
   )
 }
