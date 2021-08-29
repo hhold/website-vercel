@@ -1,8 +1,9 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="flex flex-col font-sf font-light subpixel-antialiased tracking-tight mx-10">
+    <div className="flex flex-col font-sf font-light subpixel-antialiased tracking-tight mx-5">
       <Head>
         <title>Hitesh Nair</title>
         <link rel="icon" href="/favicon.ico" />
@@ -10,10 +11,12 @@ export default function Home() {
 
       <section className="m-16 mt-40">
         <div className="flex flex-col font-c text-6xl">
-          New here?
-          <a href="#" className="flex flex-row mt-3 hover:bg-green-300 hover:no-underline">
-            Who the hell is Hitesh? →
+          new here?
+          <Link href="/about">
+          <a className="flex flex-row mt-3">
+            who on earth is Hitesh? →
           </a>
+          </Link>
         </div>
       </section>
 
