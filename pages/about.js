@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+
 
 export default function About() {
     return(
@@ -6,11 +8,16 @@ export default function About() {
             <Head>
                 <title>Lol</title>
             </Head>
-        <section className="m-16 mt-40 flex justify-center align-middle">
+            <nav className="p-5 pb-0 font-c text-2xl">
+                <Link href="/">
+                    <a>Home</a>
+                </Link>
+            </nav>
+        <section className="m-16 mt-40 flex justify-center">
             <div>
                 <h1 className="text-5xl font-medium font-c mb-10">Who on earth is Hitesh?</h1>
                 
-                <article className="prose max-w-none prose-sm sm:prose lg:prose-lg xl:prose-xl font-tng">
+                <article className="prose max-w-none prose-sm sm:prose lg:prose-lg xl:prose-xl font-sf">
     <p>Greetings, visitor!</p>
     <p>Welcome to my blog. You’re probably wondering who the hell I am. Good news, I have no idea either.</p>
     <p>My name’s Hitesh. I’m in college right now. Well, almost a year left, to be exact.</p>
