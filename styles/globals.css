@@ -1,82 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 
 @tailwind base;
 
-
-
-a:hover, a:active{
-    background-color: greenyellow;
-    color: blue !important;
+a:hover,
+a:active {
+  background-color: greenyellow;
+  color: blue !important;
 }
 
-/* ::selection {
-    color: red;
-    background: yellow;
 
-    sticky top-0 z-50 p-5 bg-black text-white
-  } */
 
-  ::selection {
-    color: blue;
-    background: greenyellow;
-  }
+::selection {
+  /* color: blue; */
+  background: greenyellow;
+}
 
-  .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-  }
-  
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 150px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 10px 10px;
-    position: absolute;
-    z-index: 1;
-    top: 150%;
-    left: 50%;
-    margin-left: -60px;
-  }
-  
-  .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 10px;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 figure {
-    display: inline-block;
-    border: 0.5px dotted gray;
-    margin: 20px; /* adjust as needed */
+  display: inline-block;
+  border: 0.5px dotted gray;
+  margin: 20px; /* adjust as needed */
 }
 figure img {
-    vertical-align: top;
+  vertical-align: top;
 }
 figure figcaption {
-    border-top: 0.5px dotted gray;
-    text-align: center;
+  border-top: 0.5px dotted gray;
+  text-align: center;
 }
 /* p {
     margin: 20px 0;
 } */
-
-
 
 @tailwind components;
 @tailwind utilities;
