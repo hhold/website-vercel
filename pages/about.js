@@ -4,20 +4,29 @@ import Link from 'next/link'
 
 export default function About() {
     return(
-        <div>
+        <div className="dark:bg-black dark:text-white">
             <Head>
                 <title>Lol</title>
             </Head>
-            <nav className="p-5 pb-0 font-c text-2xl">
+            <nav className="p-5 pb-0 flex flex-row justify-between items-center">
                 <Link href="/">
-                    <a>Home</a>
+                    <a className="font-c text-blue-450 dark:text-red-500 text-2xl">Home</a>
                 </Link>
+                <a className="font-sf text-xs hidden lg:block tooltip" 
+                    href="https://open.spotify.com/track/3onYsG7nB3FwEVHYYWCrIM?si=b4035a1834484ffc"
+                    target="_blank"
+                    rel="noopener">
+                      🎵 No Child Left Behind - Kanye West
+                      <span className="tooltiptext">
+                          What I was listening to while writing this
+                          </span>
+                </a>
             </nav>
-        <section className="m-16 mt-40 flex justify-center">
+        <section className="px-5 py-20 pb-16 md:p-16 md:pt-40 flex justify-center">
             <div>
-                <h1 className="text-5xl font-medium font-c mb-10">Who on earth is Hitesh?</h1>
+                <h1 className="text-5xl lg:text-6xl text-blue-450 dark:text-red-500 font-medium font-c mb-10">Who on earth is Hitesh?</h1>
                 
-                <article className="prose max-w-none prose-sm sm:prose lg:prose-lg xl:prose-xl font-sf">
+                <article className="prose dark:prose-dark font-sf">
     <p>Greetings, visitor!</p>
     <p>Welcome to my blog. You’re probably wondering who the hell I am. Good news, I have no idea either.</p>
     <p>My name’s Hitesh. I’m in college right now. Well, almost a year left, to be exact.</p>
@@ -124,10 +133,7 @@ export default function About() {
     <p>Cheerio,</p>
     <p>Hitesh.</p>
 </article>
-
-
-
-                
+    
             </div>
         </section>
         </div>
