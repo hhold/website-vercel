@@ -22,7 +22,7 @@ export default function Intro() {
 
       <div className="top">
         <div className="pic relative fadeIn">
-          <Image src={image} alt="Picture of the author" layout="fill" />
+          <Image src={image} alt="Picture of the author" layout="fill" priority="true" />
         </div>
       </div>
 
