@@ -12,7 +12,7 @@ export default function Home() {
       <section className="px-5 py-20 pb-16 md:p-16 md:pt-40">
         <div className="font-c text-4xl lg:text-6xl">
           new here?<br/>
-          <Link href="/about">
+          <Link href="/intro">
             <a className="inline-block mt-3 text-blue-450 dark:text-red-500">
               who on earth is Hitesh? →
             </a>

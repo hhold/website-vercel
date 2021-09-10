@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         c: ["Schoolbell", "cursive"],
         sf: ["Noto Serif KR", "serif"],
+        poke: ["Pokemon Fire Red", "serif"]
       },
       colors: {
         blue: {
