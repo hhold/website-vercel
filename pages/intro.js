@@ -1,28 +1,76 @@
 import Head from "next/head";
-import { useState } from "react";
-import Typical from 'react-typical'
+import Image from "next/image";
+import image from "../public/image.svg";
 
+import { useWindupString } from "windups";
+
+import { useState } from "react";
+import Link from "next/link";
 
 export default function Intro() {
+  const [count, setCount] = useState(0);
+
+  const text = ["Hello", "Welcome to my website!", "My name is Hitesh"];
+
+  const [wtext] = useWindupString(text[count]);
+
   return (
-    <div className="h-screen">
+    <div className="select-none">
       <Head>
         <title>Intro</title>
       </Head>
 
-      <div className="top">top</div>
+      <div className="top">
+        <div className="pic relative fadeIn">
+          <Image src={image} alt="Picture of the author" layout="fill" />
+        </div>
+      </div>
 
       <div className="bottom">
         <div className="flex flex-row justify-around items-stretch">
-          <div className="back p-5 place-self-center">{"<"}</div>
-
-          <div className="textbox p-7 my-5 rounded-2xl font-poke text-5xl">
-          <Typical
-        steps={['Hello there! Welcome to the world of Pokémon!']}
-      />
+          <div className="back p-5 place-self-center">
+            {count > 0 && (
+              <button onClick={() => setCount(count - 1)}>
+                {/* <p className="text-3xl">&#8592;</p> */}
+                <div className="rounded-full h-16 w-16 flex items-center justify-center bg-gray-100 text-3xl md:text-4xl font-poke text-center">
+                  B
+                </div>
+              </button>
+            )}
+             {count <= 0 && (
+              <button disabled>
+                {/* <p className="text-3xl">&#8592;</p> */}
+                <div className="rounded-full h-16 w-16 flex items-center justify-center bg-gray-100 text-3xl md:text-4xl font-poke text-center">
+                  B
+                </div>
+              </button>
+            )}
           </div>
 
-          <div className="forward text-right p-5 place-self-center">{">"}</div>
+          <div className="textbox p-3 md:p-5 my-5 rounded-2xl font-poke text-4xl md:text-5xl">
+            {wtext}
+          </div>
+
+          <div className="forward text-right p-5 place-self-center">
+            {count < text.length - 1 && (
+              <button onClick={() => setCount(count + 1)}>
+                {console.log(count)}
+                {/* <p className="text-3xl">&#8594;</p> */}
+                <div className="rounded-full h-16 w-16 flex items-center justify-center bg-gray-100 text-3xl md:text-4xl font-poke text-center">
+                  A
+                </div>
+              </button>
+            )}
+            {count == text.length - 1 && (
+              <Link href="/">
+                <a>
+                  <div className="rounded-full h-16 w-16 flex items-center justify-center bg-gray-100 text-3xl md:text-4xl font-poke text-center">
+                    A
+                  </div>
+                </a>
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </div>
