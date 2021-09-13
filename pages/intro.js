@@ -26,8 +26,8 @@ export default function Intro() {
         </div>
       </div>
 
-      <div className="bottom">
-        <div className="flex flex-row justify-around items-stretch">
+      <div className="bottom flex flex-row justify-around items-stretch">
+        
           <div className="back p-5 place-self-center">
             {count > 0 && (
               <button onClick={() => setCount(count - 1)}>
@@ -71,7 +71,7 @@ export default function Intro() {
               </Link>
             )}
           </div>
-        </div>
+        
       </div>
     </div>
   );
