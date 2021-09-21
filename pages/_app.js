@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=UA-150195550-1`}
       />
       <Script>
         {`
@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+          gtag('config', 'UA-150195550-1');
         `}
       </Script>
 
@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
     })();
     
     window._qevents.push({
-    qacct:"${process.env.NEXT_PUBLIC_Q_ANALYTICS}"
+    qacct:"p-Fgyn1EJuDhqvV"
     });`}
       </Script>
 
@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
                 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_CLARITY}");
+            })(window, document, "clarity", "script", "8jp664y2yn");
             `}
       </Script>
 
