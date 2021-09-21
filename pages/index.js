@@ -8,10 +8,24 @@ export default function Home() {
         <title>Hitesh Nair</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+         (function(c,l,a,r,i,t,y){
+             c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+             t=l.createElement(r);
+             t.async=1;
+             t.src="https://www.clarity.ms/tag/"+i;
+             y=l.getElementsByTagName(r)[0];
+             y.parentNode.insertBefore(t,y);
+         })(window, document, "clarity", "script", "8jp664y2yn");`,
+        }}
+      />
+      ;
       <section className="px-5 py-20 pb-16 md:p-16 md:pt-40">
         <div className="font-c text-4xl lg:text-6xl">
-          new here?<br/>
+          new here?
+          <br />
           <Link href="/intro">
             <a className="inline-block mt-3 text-blue-450 dark:text-red-500">
               who on earth is Hitesh? →
